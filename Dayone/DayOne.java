@@ -1,10 +1,12 @@
-package Dayone;
-import java.io.*;
-import java.util.ArrayList;
 /**
  * Link to the first day's challenge: https://adventofcode.com/2022/day/1
  */
-import java.util.Collections;
+
+
+package Dayone;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections; 
 
 public class DayOne{
     public static void main(String[] args) throws IOException {
