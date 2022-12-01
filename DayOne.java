@@ -1,12 +1,15 @@
 import java.io.*;
 import java.util.ArrayList;
+/**
+ * Link to the first day's challenge: https://adventofcode.com/2022/day/1
+ */
 import java.util.Collections;
 
 public class DayOne{
     public static void main(String[] args) throws IOException {
         File file = new File("day1input.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
-        long largest = 0;
+        //int largest = 0; This is for part one of the question.
         String temp = "";
         long tempNum = 0;
         ArrayList<Long> arr = new ArrayList<>();
@@ -14,6 +17,7 @@ public class DayOne{
         {
             if(temp.isBlank())
             {
+                //This is for part one of the question.
                 // if(tempNum > largest)
                 // {
                 //     largest = tempNum;
