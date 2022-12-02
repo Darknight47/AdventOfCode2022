@@ -1,7 +1,10 @@
-/*
- * Link to the challenge: https://adventofcode.com/2022/day/2
- */
+package Daytwo;
 import java.io.*;
+
+/*
+* Link to the challenge: https://adventofcode.com/2022/day/2
+*/
+
 
 public class DayTwo
 {
