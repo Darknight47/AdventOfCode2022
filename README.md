@@ -6,3 +6,5 @@ Link: https://adventofcode.com/
 DayOne: https://adventofcode.com/2022/day/1
 
 DayTwo: https://adventofcode.com/2022/day/2
+
+DayThree: https://adventofcode.com/2022/day/3
