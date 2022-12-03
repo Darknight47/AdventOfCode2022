@@ -1,7 +1,9 @@
+package Daythree;
+import java.io.*;
+
 /*
  * Link: https://adventofcode.com/2022/day/3
  */
-import java.io.*;
 
 public class DayThree
 {
