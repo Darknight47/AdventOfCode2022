@@ -1,3 +1,4 @@
+package Dayfive;
 import java.io.*;
 import java.util.ArrayDeque;
 
@@ -11,6 +12,7 @@ public class Dayfifth {
     ArrayDeque<Character> seven = new ArrayDeque<>();
     ArrayDeque<Character> eight = new ArrayDeque<>();
     ArrayDeque<Character> nine = new ArrayDeque<>();
+    //HashMap<Integer, ArrayDeque<Character>> map = new HashMap<>();
 
     public static void main(String[] args) throws IOException {
         File file = new File("Day5input.txt");
@@ -38,12 +40,15 @@ public class Dayfifth {
                     int from = Integer.parseInt(arr[3]);
                     int to = Integer.parseInt(arr[5]);
                     for (int i = 0; i < quant; i++) {
-                        char ch = df.getChar(from);
+                        char ch = ' ';
+                        if(quant == 1)
+                            ch = df.getChar(from);
+                        else
+                            ch = df.getCharFromBottom(from);
                         df.putChar(ch, to);
                     }
                 }
             }
-            
         }
         df.printAnswer();
         br.close();
@@ -63,7 +68,7 @@ public class Dayfifth {
 
     public void filling(String temp, int num) {
         char[] arr = temp.toCharArray();
-        switch (num) {
+          switch (num) {
             case 1:
                 first.offerFirst(arr[1]);
                 break;
@@ -114,6 +119,26 @@ public class Dayfifth {
         } else
             return nine.pollLast();
     }
+    public char getCharFromBottom(int from) {
+        if (from == 1) {
+            return first.pollFirst();
+        } else if (from == 2) {
+            return second.pollFirst();
+        } else if (from == 3) {
+            return third.pollFirst();
+        } else if (from == 4) {
+            return fourth.pollFirst();
+        } else if (from == 5) {
+            return fifth.pollFirst();
+        } else if (from == 6) {
+            return sixth.pollFirst();
+        } else if (from == 7) {
+            return seven.pollFirst();
+        } else if (from == 8) {
+            return eight.pollFirst();
+        } else
+            return nine.pollFirst();
+    }
 
     public void putChar(char ch, int to) {
         if (to == 1)
@@ -152,7 +177,7 @@ public class Dayfifth {
             nine.offerLast(ch);
         }
     }
-
+   
     public void printAnswer()
     {
         String answer = "";
