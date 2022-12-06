@@ -12,3 +12,5 @@ DayThree: https://adventofcode.com/2022/day/3
 DayFour: https://adventofcode.com/2022/day/4
 
 DayFive: https://adventofcode.com/2022/day/5
+
+DaySix: https://adventofcode.com/2022/day/6
